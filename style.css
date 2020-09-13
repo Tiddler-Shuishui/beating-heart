@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.heart {
+  display: inline-block;
+  position: relative;
+  margin: 100px;
+  transition: all 1s;
+}
+
+.heart>.box1 {
+  background: red;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  transform: rotate(45deg) translateX(32px);
+  border-radius: 50% 0 0 50%;
+}
+
+.heart>.box2 {
+  background: red;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: -50px;
+  left: 50px;
+  transform: rotate(45deg) translateY(32px);
+  border-radius: 50% 50% 0 0;
+}
+
+.heart>.box3 {
+  background: red;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  transform: rotate(45deg);
+}
+
+.heart:hover {
+  transform: scale(1.3);
+}
